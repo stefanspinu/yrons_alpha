@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yron's Only</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+              <a href="#" class="header__logo">
+                <img src="images/text.png" alt="logo">
+                <div></div>
+              </a>
+              <div class="header__burger">
+                <span></span>
+              </div>
+              <nav class="header__menu">
+                <ul class="header__list">
+                  <li >
+                    <a href="#overview" class="header__link">Overview</a>
+                  </li>
+                  <li >
+                    <a href="#roadmap" class="header__link">Roadmap</a>
+                  </li>
+                  <li >
+                    <a href="#faq" class="header__link">FAQ</a>
+                  </li>
+                  <li >
+                    <a href="https://twitter.com/yron_01" class="header__link" target="_blank">Twitter</a>
+                  </li>
+                  <li >
+                    <a href="https://discord.gg/6AUq5BRTKV" target="_blank" class="header__link header__discord">Discord</a>
+                  </li>
+                </ul>
+              </nav>
+              
+                <button class="header__button" style="cursor: pointer; position: relative; z-index: 3;">
+                  <a href="https://discord.gg/6AUq5BRTKV" target="_blank" style="width: 100%; height: 100%; position: absolute; z-index: 4; top: 0px; left: 0; right: 0; padding-top: 10px;">
+                      Join Discord
+                  </a>
+                </button>
+            </div>
+          </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+          
+          <div class="main__content">
+            <div class="main__header">
+              <span class="main__yron">
+                YRON
+                <span></span>
+              </span>
+              ’S VIP <br>
+              ALL ALPHA PASS
+            </div>
+            <div class="main__subheader">
+              The Only one Alpha pass you need, created by a team of professionals who are ready to help you at any time to succeed in the difficult world of NFTs
+            </div>
+            <a href="https://opensea.io/collection/yronsalpha" target="_blank">
+              <button class="main__button" style="cursor: pointer;">
+                View on Opensea
+              </button>
+            </a>
+            <div class="main__footer">
+              <div class="main__line"></div>
+              <div class="main__explore">
+                <span>Explore Now</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </main>
+
+    <div class="mint">
+      <div class="wrapper">
+        <div class="mint__container">
+          
+          <div class="mint__gif">
+            <div></div>
+            <img src="images/Gold_1000px.gif" alt="main pass">
+          </div>
+          <div class="mint__buttons">
+            <button class="mint__supply" style="cursor: initial;">Total supply: <span id="total-supply"></span> 1,111</button>
+            <button class="mint__main" id="mint">
+              <div class="mint_plus" id="topleft-plus"><img src="images/plusIcon.png" alt=""></div>
+              <div class="mint_plus" id="topright-plus"><img src="images/plusIcon.png" alt=""></div>
+              <div class="mint_plus" id="bottomleft-plus"><img src="images/plusIcon.png" alt=""></div>
+              <div class="mint_plus" id="bottomright-plus"><img src="images/plusIcon.png" alt=""></div>
+              Mint
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview" id="overview">
+      <div class="wrapper">
+        <div class="overview__cover">
+          <div class="overview__header">YRON’S ALPHA <br>
+            OVERVIEW</div>
+          <div class="overview__text">Holding one of the 1111 YRON’S ALPHA passes gives holders year-long access to a valuable suite of NFT-related tools, features, and alpha from experts designed to give NFT traders the competitive edge in such a rapidly moving market
+            Holders will get to participate in exclusive whitelist giveaways, retain control of the community by guiding the direction of future benefits, and have first access to alpha fromYRON and his team. Members of the community who stand out will be rewarded with leadership roles and other benefits as the YRON’S ALPHA team works in tandem to build a community FOR the community.</div>
+          <div class="overview__image">
+            <img src="images/overview.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gives common">
+      <div class="wrapper">
+        <div class="gives__cover">
+          <div class="gives__header title">
+            YRON’S ALPHA GIVES YOU
+          </div>
+          <div class="gives__blocks">
+            <div class="gives__block block-gives" id="block-gives-1">
+              <div class="block-gives__header">
+                <span>NFT TRADING TOOLS</span>
+              </div>
+              <div class="block-give__body">
+                <div class="block-gives__icon">
+                  <img src="images/givesYou1.png" alt="">
+                </div>
+                <div class="block-gives__text">
+                  Holding a YRON’S ALPHA pass will give owners access to an advanced and highly set of tools integrated in the discord, including but not limited to real time mint alerts, smart money trade trackers, whale wallet trackers, listing bots, and more. The team is entirely open to adjusting tools available as the community sees fit.
+                </div>
+              </div>
+            </div>
+            <div class="gives__block block-gives" id="block-gives-2">
+              <div class="block-gives__header">
+                <span>WHITELIST SPOTS</span>
+              </div>
+              <div class="block-give__body">
+                <div class="block-gives__icon">
+                  <img src="images/givesYou2.png" alt="">
+                </div>
+                <div class="block-gives__text">
+                  YRON, his team and their friends in the NFT space will be constantly leveraging their rapidly growing network as prominent figures to acquire whitelist spots for the YRON’S ALPHA community. Each YRON’S ALPHA pass will act as one entry and this will be a large focus for the project.
+                </div>
+              </div>
+            </div>
+            <div class="gives__block block-gives" id="block-gives-3">
+              <div class="block-gives__header">
+                <span>RAPID ALPHA</span>
+              </div>
+              <div class="block-give__body">
+                <div class="block-gives__icon">
+                  <img src="images/givesYou3.png" alt="">
+                </div>
+                <div class="block-gives__text">
+                  YRON and his team, along with active and trusted members of the community, will bring NFT-related market information straight to you in real time. If you hold a YRON’S ALPHA pass, the team’s alpha is your alpha, and you will have first dibs on the gems that YRON has become notorious for finding in the NFT space
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="roadmap common" id="roadmap">
+      <div class="wrapper">
+        <div class="roadmap__cover">
+          <div class="title">Roadmap</div>
+          <div class="subtitle">How we're doing</div>
+          <div class="roadmap__blocks">
+            <div class="roadmap__block block-roadmap" id="block-roadmap-1">
+              <div class="block-roadmap__header">
+                Pre Mint 
+                <span>001</span>
+              </div>
+              <div class="block-roadmap__body">
+                <ol>
+                  <li>Promotion and marketing rollout to create brand awareness</li>
+                  <li>Discord launches in phases and community comes together</li>
+                  <li>Whitelist access is rolled out</li>
+                  <li>100 passes are reserved for the community wallet for marketing and to reward community members who are active contributors</li>
+                </ol>
+              </div>
+            </div>
+            <div class="roadmap__block block-roadmap" id="block-roadmap-2">
+              <div class="block-roadmap__header">
+                PUBLIC MINT 
+                <span>002</span>
+              </div>
+              <div class="block-roadmap__body">
+                <ol>
+                  <li>Passes are distributed at 0.25 ETH for each pass that’s left</li>
+                  <li>Holders get access to alpha channels, NFT trading tools and whitelist spots</li>
+                  <li>5 minters will be selected to receive 1 ETH each</li>
+                </ol>
+              </div>
+            </div>
+            <div class="roadmap__block block-roadmap" id="block-roadmap-3">
+              <div class="block-roadmap__header">
+                Pre Mint 
+                <span>003</span>
+              </div>
+              <div class="block-roadmap__body">
+                <ol>
+                  <li>Promotion and marketing rollout to create brand awareness</li>
+                  <li>Discord launches in phases and community comes together</li>
+                  <li>Whitelist access is rolled out</li>
+                  <li>100 passes are reserved for the community wallet for marketing and to reward community members who are active contributors</li>
+                </ol>
+              </div>
+            </div>
+            <div class="roadmap__block block-roadmap" id="block-roadmap-4">
+              <div class="block-roadmap__header">
+                Pre Mint 
+                <span>004</span>
+              </div>
+              <div class="block-roadmap__body">
+                <ol>
+                  <li>Promotion and marketing rollout to create brand awareness</li>
+                  <li>Discord launches in phases and community comes together</li>
+                  <li>Whitelist access is rolled out</li>
+                  <li>100 passes are reserved for the community wallet for marketing and to reward community members who are active contributors</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="launch">
+      <div class="wrapper">
+        <div class="launch__cover common">
+          <div class="launch__title title">LAUNCH <span></span></div>
+          <div class="launch__subtitle subtitle">MARCH 01, 2022</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq" id="faq">
+      <div class="wrapper">
+        <div class="faq__cover">
+         <div class="faq__image">
+           <img src="images/faq.png" alt="faq">
+         </div> 
+         <div class="faq__main">
+           <div class="faq__header">
+             <div class="faq__title title">FAQ</div>
+             <div class="faq__subtitle subtitle">Frequently asked questions</div>
+           </div>
+           <div class="faq__body">
+            <div class="wrap wrap-1">
+              <input type="radio" id="tab-1" name="tabs">
+              <label for="tab-1"><div>What is Mint Price?</div><div class="cross"></div></label>
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium minima, excepturi quis maiores. Eaque quae, nam delectus explicabo, deserunt ipsum!</div>
+            </div>
+          
+            <div class="wrap wrap-2">
+              <input type="radio" id="tab-2" name="tabs">
+              <label for="tab-2"><div>What is the Supply?</div><div class="cross"></div></label>
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium minima, excepturi quis maiores. Eaque quae, nam delectus <span class="tip" data-tip="Eaque quae, nam delectus explicabo, deserunt ipsum!">explicabo</span>,
+                deserunt ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="tip" data-tip="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">Mollitia</span> autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium
+                minima, excepturi quis maiores. Eaque quae, nam delectus explicabo, <span class="tip" data-tip="Lorem ipsum dolor sit amet.">deserunt</span> ipsum!</div>
+            </div>
+            <div class="wrap wrap-3">
+              <input type="radio" id="tab-3" name="tabs">
+              <label for="tab-3"><div>How was the price derived?</div><div class="cross"></div></label>
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium minima, excepturi quis maiores. Eaque quae, nam delectus <span class="tip" data-tip="Eaque quae, nam delectus explicabo, deserunt ipsum!">explicabo</span>,
+                deserunt ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="tip" data-tip="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">Mollitia</span> autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium
+                minima, excepturi quis maiores. Eaque quae, nam delectus explicabo, <span class="tip" data-tip="Lorem ipsum dolor sit amet.">deserunt</span> ipsum!</div>
+            </div>
+            <div class="wrap wrap-4">
+              <input type="radio" id="tab-4" name="tabs">
+              <label for="tab-4"><div>Should I try to get more than one?</div><div class="cross"></div></label>
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium minima, excepturi quis maiores. Eaque quae, nam delectus <span class="tip" data-tip="Eaque quae, nam delectus explicabo, deserunt ipsum!">explicabo</span>,
+                deserunt ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="tip" data-tip="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">Mollitia</span> autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium
+                minima, excepturi quis maiores. Eaque quae, nam delectus explicabo, <span class="tip" data-tip="Lorem ipsum dolor sit amet.">deserunt</span> ipsum!</div>
+            </div>
+            <div class="wrap wrap-5">
+              <input type="radio" id="tab-5" name="tabs">
+              <label for="tab-5"><div>So... I got a pass, now what?</div><div class="cross"></div></label>
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium minima, excepturi quis maiores. Eaque quae, nam delectus <span class="tip" data-tip="Eaque quae, nam delectus explicabo, deserunt ipsum!">explicabo</span>,
+                deserunt ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="tip" data-tip="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">Mollitia</span> autem quasi inventore unde nobis voluptatibus illum quae rerum laudantium
+                minima, excepturi quis maiores. Eaque quae, nam delectus explicabo, <span class="tip" data-tip="Lorem ipsum dolor sit amet.">deserunt</span> ipsum!</div>
+            </div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="wrapper">
+        <div class="footer__cover">
+          <div class="footer__table">
+            <div class="footer__block">
+              <div class="footer_logo">
+                <img src="/images/logoGold.png" alt="logo">
+              </div>
+            </div>
+           <div class="footer__block">
+            <div class="footer__copyright">
+              2022 - Created by YRON’S ALPHA
+            </div>
+           </div>
+           <div class="footer__block">
+            <div class="footer__links">
+              <a href="https://twitter.com/yron_01" class="footer__link" target="_blank">
+                <img src="images/twitter-icon.png" alt="twitter icon">
+              </a>
+              <a href="https://discord.gg/6AUq5BRTKV" class="footer__link" target="_blank">
+                <img src="images/discord-icon-2.png" alt="discord icon">
+              </a>
+              <a href="https://www.youtube.com/channel/UCkhstDvo5yKtEdQqtuu4AIw" class="footer__link" target="_blank">
+                <img src="images/youtube-icon.png" alt="youtube icon">
+              </a>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
